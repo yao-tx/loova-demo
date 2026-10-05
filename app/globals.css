@@ -116,6 +116,49 @@
     --sidebar-ring: oklch(0.556 0 0);
 }
 
+.banner-container {
+  background: radial-gradient(60.5% 60.5% at 50% 50%, #66133300 0, #661333);
+  box-shadow: inset 0 1px 64px #ed157252, 0 8px 24px #0000001f;
+  border-radius: 32px;
+  border: 2px solid transparent;
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+}
+.SpaceGrotesk {
+  font-family: "Space Grotesk", sans-serif;
+}
+.ui-el-button-primary-green {
+  outline: none !important;
+  border: 0;
+  background: linear-gradient(188.89deg, #00f5a0 15.56%, #00d9f5 93.38%) !important;
+  --el-button-color: #14151a;
+  --el-button-text-color: #14151a;
+  --el-button-active-bg-color: #07dda0;
+  --el-button-active-color: #14151a;
+  --el-button-active-text-color: #14151a;
+  --el-button-hover-bg-color: #07dda0;
+  --el-button-hover-border-color: #00fab5;
+  --el-button-hover-text-color: #14151a;
+  --el-button-disabled-bg-color: #07b382;
+  --el-button-disabled-text-color: rgba(20, 21, 26, .8);
+  font-weight: 600;
+  font-family: "Host Grotesk", sans-serif;
+  transition: opacity .3s ease-in-out;
+}
+.tag {
+  background: radial-gradient(circle, #f920d1 0, #ed1572), #dcd58729;
+}
+.exclusive-tag {
+  background: linear-gradient(188.89deg, #00f5a0 15.56%, #00d9f5 93.38%);
+}
+
+&[data-nested-dialog-open]::after {
+  background-color: rgba(255, 255, 255, 0.3); /* Needs a semi-transparent background */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}
+
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
